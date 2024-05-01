@@ -34,19 +34,13 @@ struct LottoPickerView: View {
 
     var body: some View {
         VStack {
-            Text("Tap the number to select")
+            Text("Tap anywhere to select a number")
                 .padding()
             Spacer()
             Text(self.randomNumber != nil ? "\(self.randomNumber!)" : "")
-                .font(.system(size: 120))
+                .font(.system(size: 100))
                 .onTapGesture {
-                    if let number = self.randomNumber {
-                        if self.firstRowNumbers.count < 5 {
-                            self.selectNumber(number, addTo: &self.firstRowNumbers)
-                        } else if self.secondRowNumbers.count < 2 {
-                            self.selectNumber(number, addTo: &self.secondRowNumbers)
-                        }
-                    }
+                    self.pickNumber()
                 }
             Spacer()
             HStack {
@@ -92,6 +86,20 @@ struct LottoPickerView: View {
                 }
             }
         }
+        .contentShape(Rectangle())
+        .onTapGesture {
+            self.pickNumber()
+        }
+    }
+
+    private func pickNumber() {
+        if let number = self.randomNumber {
+            if self.firstRowNumbers.count < 5 {
+                self.selectNumber(number, addTo: &self.firstRowNumbers)
+            } else if self.secondRowNumbers.count < 2 {
+                self.selectNumber(number, addTo: &self.secondRowNumbers)
+            }
+        }
     }
 
     private func selectNumber(_ number: Int, addTo array: inout [Int]) {
@@ -108,6 +116,7 @@ struct LottoPickerView: View {
         return randomNumber
     }
 }
+
 
 
 
