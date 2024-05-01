@@ -117,12 +117,6 @@ struct LottoPickerView: View {
     }
 }
 
-
-
-
-
-
-
 #Preview {
     ContentView()
 }
