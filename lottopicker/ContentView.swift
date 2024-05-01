@@ -1,5 +1,9 @@
 import SwiftUI
 
+extension Color {
+    static let gold = Color(red: 255/255, green: 215/255, blue: 0/255)
+}
+
 struct ContentView: View {
     @State private var showPicker = true
 
@@ -12,6 +16,17 @@ struct ContentView: View {
                         self.showPicker = true
                     }
                 })
+                .gesture(
+                    DragGesture()
+                        .onEnded { gesture in
+                            if gesture.translation.height > 100 {
+                                self.showPicker = false
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                    self.showPicker = true
+                                }
+                            }
+                        }
+                )
             } else {
                 Text("App Resetting...")
                     .padding()
@@ -34,71 +49,51 @@ struct LottoPickerView: View {
 
     var body: some View {
         VStack {
-            Text("Tap anywhere to select a number")
+            Text("Tap anywhere to select a number, pull down to reset")
                 .padding()
             Spacer()
-            Text(self.randomNumber != nil ? "\(self.randomNumber!)" : "")
+            Text(randomNumber != nil ? "\(randomNumber!)" : "")
                 .font(.system(size: 100))
                 .onTapGesture {
-                    self.pickNumber()
+                    pickNumber()
                 }
             Spacer()
-            HStack {
-                ForEach(self.firstRowNumbers, id: \.self) { number in
-                    Text("\(number)")
-                        .font(.title)
-                        .padding()
+            HStack(spacing: 10) {
+                ForEach(firstRowNumbers, id: \.self) { number in
+                    LottoBall(number: number, backgroundColor: .black)
                 }
             }
-            HStack {
-                ForEach(self.secondRowNumbers, id: \.self) { number in
-                    Text("\(number)")
-                        .font(.title)
-                        .padding()
+            HStack(spacing: 10) {
+                ForEach(secondRowNumbers, id: \.self) { number in
+                    LottoBall(number: number, backgroundColor: .gold)
                 }
-            }
-            Spacer()
-            Button(action: {
-                self.resetSelection()
-            }) {
-                Text("Reset")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
             }
             Spacer()
         }
         .onAppear {
-            // Start the timer
-            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
-                guard self.isTimerRunning else {
-                    timer.invalidate()
-                    return
-                }
-                // Generate random number
-                if self.firstRowNumbers.count < 5 {
-                    self.randomNumber = self.generateUniqueRandomNumber(excluding: self.firstRowNumbers, upperBound: 49)
-                } else if self.secondRowNumbers.count < 2 {
-                    self.randomNumber = self.generateUniqueRandomNumber(excluding: self.secondRowNumbers, upperBound: 12)
+            Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true) { timer in
+                guard isTimerRunning else { timer.invalidate(); return }
+                if firstRowNumbers.count < 5 {
+                    randomNumber = generateUniqueRandomNumber(excluding: firstRowNumbers, upperBound: 49)
+                } else if secondRowNumbers.count < 2 {
+                    randomNumber = generateUniqueRandomNumber(excluding: secondRowNumbers, upperBound: 12)
                 } else {
-                    self.isTimerRunning = false
+                    isTimerRunning = false
                 }
             }
         }
         .contentShape(Rectangle())
         .onTapGesture {
-            self.pickNumber()
+            pickNumber()
         }
     }
 
     private func pickNumber() {
-        if let number = self.randomNumber {
-            if self.firstRowNumbers.count < 5 {
-                self.selectNumber(number, addTo: &self.firstRowNumbers)
-            } else if self.secondRowNumbers.count < 2 {
-                self.selectNumber(number, addTo: &self.secondRowNumbers)
-            }
+        guard let number = randomNumber else { return }
+        if firstRowNumbers.count < 5 {
+            selectNumber(number, addTo: &firstRowNumbers)
+        } else if secondRowNumbers.count < 2 {
+            selectNumber(number, addTo: &secondRowNumbers)
         }
     }
 
@@ -110,10 +105,23 @@ struct LottoPickerView: View {
 
     private func generateUniqueRandomNumber(excluding array: [Int], upperBound: Int) -> Int {
         var randomNumber: Int
-        repeat {
-            randomNumber = Int.random(in: 1...upperBound)
-        } while array.contains(randomNumber)
+        repeat { randomNumber = Int.random(in: 1...upperBound) } while array.contains(randomNumber)
         return randomNumber
+    }
+}
+
+struct LottoBall: View {
+    var number: Int
+    var backgroundColor: Color
+    
+    var body: some View {
+        Text("\(number)")
+            .font(.title)
+            .foregroundColor(.white)
+            .frame(width: 40, height: 40)
+            .background(backgroundColor)
+            .clipShape(Circle())
+            .padding()
     }
 }
 
