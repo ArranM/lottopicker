@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B328D9012BE247DF00BAD4D8 /* lottopickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328D9002BE247DF00BAD4D8 /* lottopickerApp.swift */; };
+		B328D9032BE247DF00BAD4D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328D9022BE247DF00BAD4D8 /* ContentView.swift */; };
+		B328D9052BE247E200BAD4D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B328D9042BE247E200BAD4D8 /* Assets.xcassets */; };
+		B328D9082BE247E200BAD4D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B328D9072BE247E200BAD4D8 /* Preview Assets.xcassets */; };
+		B328D9122BE247E200BAD4D8 /* lottopickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328D9112BE247E200BAD4D8 /* lottopickerTests.swift */; };
+		B328D91C2BE247E200BAD4D8 /* lottopickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328D91B2BE247E200BAD4D8 /* lottopickerUITests.swift */; };
+		B328D91E2BE247E200BAD4D8 /* lottopickerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328D91D2BE247E200BAD4D8 /* lottopickerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B328D90E2BE247E200BAD4D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B328D8F52BE247DF00BAD4D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B328D8FC2BE247DF00BAD4D8;
+			remoteInfo = lottopicker;
+		};
+		B328D9182BE247E200BAD4D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B328D8F52BE247DF00BAD4D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B328D8FC2BE247DF00BAD4D8;
+			remoteInfo = lottopicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B328D8FD2BE247DF00BAD4D8 /* lottopicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lottopicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B328D9002BE247DF00BAD4D8 /* lottopickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lottopickerApp.swift; sourceTree = "<group>"; };
+		B328D9022BE247DF00BAD4D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B328D9042BE247E200BAD4D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B328D9072BE247E200BAD4D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B328D90D2BE247E200BAD4D8 /* lottopickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lottopickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B328D9112BE247E200BAD4D8 /* lottopickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lottopickerTests.swift; sourceTree = "<group>"; };
+		B328D9172BE247E200BAD4D8 /* lottopickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lottopickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B328D91B2BE247E200BAD4D8 /* lottopickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lottopickerUITests.swift; sourceTree = "<group>"; };
+		B328D91D2BE247E200BAD4D8 /* lottopickerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lottopickerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B328D8FA2BE247DF00BAD4D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B328D90A2BE247E200BAD4D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B328D9142BE247E200BAD4D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B328D8F42BE247DF00BAD4D8 = {
+			isa = PBXGroup;
+			children = (
+				B328D8FF2BE247DF00BAD4D8 /* lottopicker */,
+				B328D9102BE247E200BAD4D8 /* lottopickerTests */,
+				B328D91A2BE247E200BAD4D8 /* lottopickerUITests */,
+				B328D8FE2BE247DF00BAD4D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B328D8FE2BE247DF00BAD4D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B328D8FD2BE247DF00BAD4D8 /* lottopicker.app */,
+				B328D90D2BE247E200BAD4D8 /* lottopickerTests.xctest */,
+				B328D9172BE247E200BAD4D8 /* lottopickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B328D8FF2BE247DF00BAD4D8 /* lottopicker */ = {
+			isa = PBXGroup;
+			children = (
+				B328D9002BE247DF00BAD4D8 /* lottopickerApp.swift */,
+				B328D9022BE247DF00BAD4D8 /* ContentView.swift */,
+				B328D9042BE247E200BAD4D8 /* Assets.xcassets */,
+				B328D9062BE247E200BAD4D8 /* Preview Content */,
+			);
+			path = lottopicker;
+			sourceTree = "<group>";
+		};
+		B328D9062BE247E200BAD4D8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B328D9072BE247E200BAD4D8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B328D9102BE247E200BAD4D8 /* lottopickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B328D9112BE247E200BAD4D8 /* lottopickerTests.swift */,
+			);
+			path = lottopickerTests;
+			sourceTree = "<group>";
+		};
+		B328D91A2BE247E200BAD4D8 /* lottopickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B328D91B2BE247E200BAD4D8 /* lottopickerUITests.swift */,
+				B328D91D2BE247E200BAD4D8 /* lottopickerUITestsLaunchTests.swift */,
+			);
+			path = lottopickerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B328D8FC2BE247DF00BAD4D8 /* lottopicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B328D9212BE247E300BAD4D8 /* Build configuration list for PBXNativeTarget "lottopicker" */;
+			buildPhases = (
+				B328D8F92BE247DF00BAD4D8 /* Sources */,
+				B328D8FA2BE247DF00BAD4D8 /* Frameworks */,
+				B328D8FB2BE247DF00BAD4D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lottopicker;
+			productName = lottopicker;
+			productReference = B328D8FD2BE247DF00BAD4D8 /* lottopicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B328D90C2BE247E200BAD4D8 /* lottopickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B328D9242BE247E300BAD4D8 /* Build configuration list for PBXNativeTarget "lottopickerTests" */;
+			buildPhases = (
+				B328D9092BE247E200BAD4D8 /* Sources */,
+				B328D90A2BE247E200BAD4D8 /* Frameworks */,
+				B328D90B2BE247E200BAD4D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B328D90F2BE247E200BAD4D8 /* PBXTargetDependency */,
+			);
+			name = lottopickerTests;
+			productName = lottopickerTests;
+			productReference = B328D90D2BE247E200BAD4D8 /* lottopickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B328D9162BE247E200BAD4D8 /* lottopickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B328D9272BE247E300BAD4D8 /* Build configuration list for PBXNativeTarget "lottopickerUITests" */;
+			buildPhases = (
+				B328D9132BE247E200BAD4D8 /* Sources */,
+				B328D9142BE247E200BAD4D8 /* Frameworks */,
+				B328D9152BE247E200BAD4D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B328D9192BE247E200BAD4D8 /* PBXTargetDependency */,
+			);
+			name = lottopickerUITests;
+			productName = lottopickerUITests;
+			productReference = B328D9172BE247E200BAD4D8 /* lottopickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B328D8F52BE247DF00BAD4D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					B328D8FC2BE247DF00BAD4D8 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					B328D90C2BE247E200BAD4D8 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B328D8FC2BE247DF00BAD4D8;
+					};
+					B328D9162BE247E200BAD4D8 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B328D8FC2BE247DF00BAD4D8;
+					};
+				};
+			};
+			buildConfigurationList = B328D8F82BE247DF00BAD4D8 /* Build configuration list for PBXProject "lottopicker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B328D8F42BE247DF00BAD4D8;
+			productRefGroup = B328D8FE2BE247DF00BAD4D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B328D8FC2BE247DF00BAD4D8 /* lottopicker */,
+				B328D90C2BE247E200BAD4D8 /* lottopickerTests */,
+				B328D9162BE247E200BAD4D8 /* lottopickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B328D8FB2BE247DF00BAD4D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B328D9082BE247E200BAD4D8 /* Preview Assets.xcassets in Resources */,
+				B328D9052BE247E200BAD4D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B328D90B2BE247E200BAD4D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B328D9152BE247E200BAD4D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B328D8F92BE247DF00BAD4D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B328D9032BE247DF00BAD4D8 /* ContentView.swift in Sources */,
+				B328D9012BE247DF00BAD4D8 /* lottopickerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B328D9092BE247E200BAD4D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B328D9122BE247E200BAD4D8 /* lottopickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B328D9132BE247E200BAD4D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B328D91C2BE247E200BAD4D8 /* lottopickerUITests.swift in Sources */,
+				B328D91E2BE247E200BAD4D8 /* lottopickerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B328D90F2BE247E200BAD4D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B328D8FC2BE247DF00BAD4D8 /* lottopicker */;
+			targetProxy = B328D90E2BE247E200BAD4D8 /* PBXContainerItemProxy */;
+		};
+		B328D9192BE247E200BAD4D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B328D8FC2BE247DF00BAD4D8 /* lottopicker */;
+			targetProxy = B328D9182BE247E200BAD4D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B328D91F2BE247E300BAD4D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B328D9202BE247E300BAD4D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B328D9222BE247E300BAD4D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lottopicker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sillkom.lottopicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B328D9232BE247E300BAD4D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lottopicker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sillkom.lottopicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B328D9252BE247E300BAD4D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sillkom.lottopickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lottopicker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lottopicker";
+			};
+			name = Debug;
+		};
+		B328D9262BE247E300BAD4D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sillkom.lottopickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lottopicker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lottopicker";
+			};
+			name = Release;
+		};
+		B328D9282BE247E300BAD4D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sillkom.lottopickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = lottopicker;
+			};
+			name = Debug;
+		};
+		B328D9292BE247E300BAD4D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sillkom.lottopickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = lottopicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B328D8F82BE247DF00BAD4D8 /* Build configuration list for PBXProject "lottopicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B328D91F2BE247E300BAD4D8 /* Debug */,
+				B328D9202BE247E300BAD4D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B328D9212BE247E300BAD4D8 /* Build configuration list for PBXNativeTarget "lottopicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B328D9222BE247E300BAD4D8 /* Debug */,
+				B328D9232BE247E300BAD4D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B328D9242BE247E300BAD4D8 /* Build configuration list for PBXNativeTarget "lottopickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B328D9252BE247E300BAD4D8 /* Debug */,
+				B328D9262BE247E300BAD4D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B328D9272BE247E300BAD4D8 /* Build configuration list for PBXNativeTarget "lottopickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B328D9282BE247E300BAD4D8 /* Debug */,
+				B328D9292BE247E300BAD4D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B328D8F52BE247DF00BAD4D8 /* Project object */;
+}
