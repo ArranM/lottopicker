@@ -14,6 +14,8 @@
 		B328D9122BE247E200BAD4D8 /* lottopickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328D9112BE247E200BAD4D8 /* lottopickerTests.swift */; };
 		B328D91C2BE247E200BAD4D8 /* lottopickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328D91B2BE247E200BAD4D8 /* lottopickerUITests.swift */; };
 		B328D91E2BE247E200BAD4D8 /* lottopickerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328D91D2BE247E200BAD4D8 /* lottopickerUITestsLaunchTests.swift */; };
+		B3710C3F2BE2D8CF00420141 /* LottoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3710C3E2BE2D8CF00420141 /* LottoPickerView.swift */; };
+		B3710C412BE2D91500420141 /* LottoBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3710C402BE2D91500420141 /* LottoBall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		B328D9172BE247E200BAD4D8 /* lottopickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lottopickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B328D91B2BE247E200BAD4D8 /* lottopickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lottopickerUITests.swift; sourceTree = "<group>"; };
 		B328D91D2BE247E200BAD4D8 /* lottopickerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lottopickerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B3710C3E2BE2D8CF00420141 /* LottoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoPickerView.swift; sourceTree = "<group>"; };
+		B3710C402BE2D91500420141 /* LottoBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoBall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				B328D9022BE247DF00BAD4D8 /* ContentView.swift */,
 				B328D9042BE247E200BAD4D8 /* Assets.xcassets */,
 				B328D9062BE247E200BAD4D8 /* Preview Content */,
+				B3710C3E2BE2D8CF00420141 /* LottoPickerView.swift */,
+				B3710C402BE2D91500420141 /* LottoBall.swift */,
 			);
 			path = lottopicker;
 			sourceTree = "<group>";
@@ -258,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B328D9032BE247DF00BAD4D8 /* ContentView.swift in Sources */,
+				B3710C3F2BE2D8CF00420141 /* LottoPickerView.swift in Sources */,
 				B328D9012BE247DF00BAD4D8 /* lottopickerApp.swift in Sources */,
+				B3710C412BE2D91500420141 /* LottoBall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
