@@ -49,7 +49,8 @@ struct LottoPickerView: View {
 
     var body: some View {
         VStack {
-            Text("Tap anywhere to select a number, pull down to reset")
+            Text("Tap to select a number, pull down to reset")
+                .multilineTextAlignment(.center)
                 .padding()
             Spacer()
             Text(randomNumber != nil ? "\(randomNumber!)" : "")
