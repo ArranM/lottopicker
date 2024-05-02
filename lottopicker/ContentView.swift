@@ -24,7 +24,7 @@ struct ContentView: View {
                         }
                 )
             } else {
-                Text("App Resetting...")
+                Text("Resetting...")
                     .padding()
                     .onAppear {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {

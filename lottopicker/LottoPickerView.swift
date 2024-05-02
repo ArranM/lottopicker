@@ -39,7 +39,7 @@ struct LottoPickerView: View {
             Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true) { timer in
                 guard isTimerRunning else { timer.invalidate(); return }
                 if firstRowNumbers.count < 5 {
-                    randomNumber = generateUniqueRandomNumber(excluding: firstRowNumbers, upperBound: 49)
+                    randomNumber = generateUniqueRandomNumber(excluding: firstRowNumbers, upperBound: 50)
                 } else if secondRowNumbers.count < 2 {
                     randomNumber = generateUniqueRandomNumber(excluding: secondRowNumbers, upperBound: 12)
                 } else {
