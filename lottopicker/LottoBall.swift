@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftUI
 
 struct LottoBall: View {
     var number: Int
@@ -12,5 +13,9 @@ struct LottoBall: View {
             .background(backgroundColor)
             .clipShape(Circle())
             .padding()
+            .overlay(
+                Circle()
+                    .stroke(Color.white, lineWidth: 2)
+            )
     }
 }

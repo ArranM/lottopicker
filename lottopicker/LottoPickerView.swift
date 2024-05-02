@@ -9,6 +9,8 @@ struct LottoPickerView: View {
     @State private var firstRowNumbers: [Int] = []
     @State private var secondRowNumbers: [Int] = []
     @State private var isTimerRunning = true
+    @State private var TimerDelay = 1.0 // 1 second
+
     var resetSelection: () -> Void
 
     var body: some View {
@@ -36,7 +38,7 @@ struct LottoPickerView: View {
             Spacer()
         }
         .onAppear {
-            Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true) { timer in
+            Timer.scheduledTimer(withTimeInterval: TimerDelay, repeats: true) { timer in
                 guard isTimerRunning else { timer.invalidate(); return }
                 if firstRowNumbers.count < 5 {
                     randomNumber = generateUniqueRandomNumber(excluding: firstRowNumbers, upperBound: 50)
