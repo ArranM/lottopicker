@@ -2,13 +2,11 @@
 
 ## Overview
 
-This app allows users to pick lottery numbers. It displays a main random number on the screen, which changes every 0.5 seconds. Users can tap on the number to select it, and the selected numbers are displayed on the screen. The first 5 numbers are randomly generated between 1 and 49, and the last 2 numbers are randomly generated between 1 and 12. Once all 7 numbers are selected, the timer stops and the selected numbers are displayed.
+This app allows users to pick lottery numbers. It displays a main random number on the screen, which changes every 1 second. Users can tap on the number to select it, and the selected numbers are displayed on the screen. The first 5 numbers are randomly generated between 1 and 50, and the last 2 numbers are randomly generated between 1 and 12. Once all 7 numbers are selected, the timer stops and the selected numbers are displayed.
 
 ## Language Used
 
-The app is written in Swift, Apple's programming language for iOS, macOS, watchOS, and tvOS development. Swift provides a powerful and intuitive syntax, making it easy to develop robust and efficient applications for Apple platforms.
-
-The SwiftUI framework is used for building the user interface. SwiftUI is a modern declarative UI framework that allows developers to write concise and expressive code to create dynamic and interactive user interfaces. It simplifies the process of building UI components and enables faster development with live previews and real-time updates.
+The app is written in Swift, Apple's programming language for iOS, macOS, watchOS, and tvOS development.
 
 ## Components
 
